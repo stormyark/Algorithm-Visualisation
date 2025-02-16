@@ -1,4 +1,4 @@
-#algorythmSelector {
+#algorithmSelector {
   padding: 10px;
   font-size: 16px;
   border-radius: 5px;
@@ -16,7 +16,7 @@
   border: 5px solid white;
   border-radius: 5px;
 }
-#algorythmName {
+#algorithmName {
   font-size: 24px;
   color: black;
   font-family: "Courier New", Courier, monospace;

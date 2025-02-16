@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Algorythm Visualisation</title>
+    <title>Algorithm Visualisation</title>
 </head>
 
 <body>
-    <select id="algorythmSelector">
+    <select id="algorithmSelector">
         <option value="" selected disabled>Select your sort algorithm</option>
         <option value="bubbleSort">Bubble Sort</option>
         <option value="selectionSort">Selection Sort</option>
@@ -18,7 +18,7 @@
     </select>
     <div class="speedSelector">
         <label for="speed">Choose your speed:</label>
-        <input type="range" step="100" min="1000" max="100" id="speed" list="values">
+        <input type="range" step="100" min="100" max="1000" id="speed" list="values">
         <datalist id="values">
             <option value="1000" label="1000"></option>
             <option value="900" label="900"></option>
@@ -33,7 +33,7 @@
         </datalist>
     </div>
     <canvas id="visualizer" width="1000px" height="1000px"></canvas>
-    <p id="algorythmName"></p>
+    <p id="algorithmName"></p>
     <script src="script.js"></script>
 </body>
 

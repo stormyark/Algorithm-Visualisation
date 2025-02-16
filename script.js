@@ -219,7 +219,7 @@ const Sort = async () => {
 };
 
 document
-  .getElementById("algorythmSelector")
+  .getElementById("algorithmSelector")
   .addEventListener("change", async (event) => {
     if (isSorting) {
       isSorting = false; // Stop the current sorting algorithm
@@ -231,7 +231,7 @@ document
     steps = 0;
     draw();
 
-    const algorithmName = document.getElementById("algorythmName");
+    const algorithmName = document.getElementById("algorithmName");
 
     if (!isSorting) {
       algorithmName.textContent = `${
