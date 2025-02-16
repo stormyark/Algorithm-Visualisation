@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Algorythm Visualisation</title>
+</head>
+
+<body>
+    <select id="algorythmSelector">
+        <option value="" selected disabled>Select your sort algorithm</option>
+        <option value="bubbleSort">Bubble Sort</option>
+        <option value="selectionSort">Selection Sort</option>
+        <option value="insertionSort">Insertion Sort</option>
+        <option value="countingSort">Counting Sort</option>
+    </select>
+    <div class="speedSelector">
+        <label for="speed">Choose your speed:</label>
+        <input type="range" step="100" min="100" max="1000" id="speed" list="values">
+        <datalist id="values">
+            <option value="100" label="100"></option>
+            <option value="200"></option>
+            <option value="300"></option>
+            <option value="400"></option>
+            <option value="500"></option>
+            <option value="600"></option>
+            <option value="700"></option>
+            <option value="800"></option>
+            <option value="900"></option>
+            <option value="1000"></option>
+        </datalist>
+    </div>
+    <canvas id="visualizer" width="1000px" height="1000px"></canvas>
+    <p id="algorythmName"></p>
+    <script src="script.js"></script>
+</body>
+
+</html>
