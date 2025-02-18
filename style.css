@@ -1,10 +1,22 @@
+* {
+  margin: 11;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
 #algorithmSelector {
   padding: 10px;
   font-size: 16px;
   border-radius: 5px;
+  border: 1px solid black;
   background: #eeeeee;
   color: black;
   justify-content: space-between;
+  display: block;
 }
 
 #visualizer {
@@ -13,13 +25,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 5px solid white;
-  border-radius: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
 }
+
 #algorithmName {
   font-size: 24px;
   color: black;
-  font-family: "Courier New", Courier, monospace;
   position: absolute;
   top: calc(50% + 500px);
   left: 50%;
@@ -28,7 +40,6 @@
 }
 
 #speed {
-  width: 15%;
   color: black;
 }
 
@@ -36,14 +47,24 @@
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  width: 220px;
 }
 
 .speedSelector label {
   font-size: 16px;
   color: black;
-  font-family: "Courier New", Courier, monospace;
 }
 
 .speedSelector input {
   width: 100%;
+}
+
+#arrayButton {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 16px;
+  color: black;
+  justify-content: space-between;
 }

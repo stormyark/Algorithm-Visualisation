@@ -20,6 +20,18 @@ let isSorting = false; // Variable to track if a sorting algorithm is running
 let speed = 300; // Initial speed of the sorting algorithm
 let steps = 0;
 
+function createRandomArray() {
+  if (!isSorting) {
+    array = [];
+    for (let i = 0; i < 40; i++) {
+      array.push(Math.floor(Math.random() * 40) + 1);
+    }
+    list = array.slice();
+    draw(); // Redraw the visualizer with the new array
+    //console.log("Random array created:", array);
+  }
+}
+
 /*
 Performance (worst-case time complexity):
 
@@ -258,6 +270,14 @@ document
     algorithmName.textContent = `Sorting is done. It took ${steps} steps`;
   });
 
+document.getElementById("speed").addEventListener("input", (event) => {
+  const inputValue = parseInt(event.target.value); // Raw slider value (100..1000)
+  // Map the inputValue so that the rightmost value (1000) gives fastest (delay = 100)
+  // and the leftmost value (100) gives slowest (delay = 1000)
+  speed = 1000 - inputValue + 100;
+  //console.log(`Speed changed to: ${inputValue}`);
+});
+
 const draw = () => {
   canvas.clearRect(0, 0, visualizer.width, visualizer.height);
   for (let i = 0; i < list.length; i++) {
@@ -276,8 +296,3 @@ const loop = () => {
 };
 
 setInterval(loop, speed);
-
-document.getElementById("speed").addEventListener("input", (event) => {
-  speed = event.target.value;
-  console.log(`Speed changed to: ${speed}`);
-});
