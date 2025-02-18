@@ -11,8 +11,8 @@ This project is a visualization tool for sorting algorithms. It provides an inte
 
 ## Technologies
 
-- **HTML5:** For structure and layout.
-- **CSS3:** For styling and responsive design.
+- **HTML:** For structure and layout.
+- **CSS:** For styling and responsive design.
 - **JavaScript:** For implementing sorting logic and dynamic visualization on an HTML Canvas.
 
 ## Setup
@@ -20,7 +20,7 @@ This project is a visualization tool for sorting algorithms. It provides an inte
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/algorithm-visualisation.git
+   git clone https://github.com/stormyark/algorithm-visualisation.git
    ```
 
 2. **Open the Project:**
@@ -33,11 +33,3 @@ This project is a visualization tool for sorting algorithms. It provides an inte
    - Adjust the speed using the slider.
    - Click the "Create random array" button to generate a new array.
    - Watch the sorting visualization update on the canvas.
-
-## Contributing
-
-Contributions are welcome! Feel free to fork this repository and submit pull requests. Please open an issue first to discuss what you’d like to change.
-
-## License
-
-This project is licensed under the MIT License.
